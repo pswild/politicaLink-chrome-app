@@ -1,0 +1,27 @@
+/*******************************************************************************
+* Author: Parker Wild, Jeffrey Gleason, Vignesh Rajendran
+* NetID: pwild, jgleason, vpr
+*
+* Project: COS 333 - "politicaLink"
+* Program(s): INSTALL
+*
+* Description: Installation instructions. 
+*******************************************************************************/
+
+Since our browser extension is not yet on the Chrome Web Store, you will have to test the project directly from your computer.
+
+You can find the PoliticaLink source code in the “src” directory on the team’s Google Drive (“333 PoliticaLink”). Everything needed to install the extension on Chrome is included in a directory named “politicaLink”. Copying this file to your computer is the most straightforward method of downloading the required source code. 
+
+If you have a GitHub account and can access the “cos33fall2017/politicaLink” repository, you may instead prefer to simply click the green “Clone or download” button. A drop-down popup will appear with the title “Clone with HTTPS”. You can use Git with the provided URL to clone the contents of “politicaLink” directly from the command line, or you may open the project in GitHub Desktop (if you have the application installed). If you are unfamiliar with either of the methods mentioned above, simply click “Download ZIP” in the bottom right-hand corner of the popup. This will download a directory named “politicaLink-master” to the “Downloads” folder on your computer. You may wish to rename the directory “politicaLink” at this time, although it is not necessary. 
+
+Once you have downloaded the files into a directory on your computer, open the Google Chrome browser application. If you do not have Chrome, you can find it at https://www.google.com/chrome/browser/desktop/index.html.
+
+After the Chrome application has opened on your computer, click on the vertical ellipses (three dots stacked on top of one another) in the upper right hand corner of the application. Hovering your mouse over the “More Tools” option will display a drop-down pane. Click on the “Extensions” option. This will bring you to Chrome’s “Extensions” page, where you can manage all of the third-party applications you have installed on your browser.
+
+If the “Developer Mode” box in the upper right-hand corner of the page is not checked, then do so. This should reveal a button labeled “Load Unpacked Extension…”. Upon clicking this button, a navigation panel will display, allowing you to locate the “politicaLink” directory that you have just downloaded to your computer. Once you have selected the “politcaLink” directory, you should see the PoliticaLink extension and its description appear on the page in front of you next to the outline of a black light bulb. If you have already extensions installed on your Chrome browser, it should appear at the top of the list. 
+
+Make sure that the “Enabled” box to the right of the PoliticaLink extension is checked, as well as the “Allow Access to file URLs” box just below the extension’s description.
+
+Reloading this page (⌘R) will update the PoliticaLink extension with any changes made to files inside of the “politicaLink” directory on your computer. Clicking the “Update extensions now” button will do the same. 
+
+The PolitcaLink extension is now installed on your Chrome browser. You should see the outline of a small, black light bulb in the upper right-hand corner of the application window, just to the left of the vertical ellipses described earlier. Clicking this icon will activate the extension for the current tab.  

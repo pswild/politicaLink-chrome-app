@@ -1,0 +1,73 @@
+<!doctype html>
+
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+
+<html>
+  <head>
+    <title>PoliticaLink</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        min-width: 250px;
+        white-space: nowrap;
+        font-size: 20px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+
+    <!-- Install nlp_compromise  -->
+    <!-- <script src="https://unpkg.com/compromise/builds/compromise.min.js"></script> -->
+
+    <!-- Call popup.js script -->
+    <script src="popup.js"></script>
+
+  </head>
+
+  <body link = "#000000" vlink="#000000" alink="#000000">
+    <a title="Visit our website!" href="https://politicalink.carrd.co/" target="_blank"><img title="Visit our website!" src="PoliticaLink_BigLogo1.png" width="300" height="179"></a>
+    <hr></hr>
+
+    <dl id="list" style="list-style-type:none">
+      <!--Generated list items will go here-->
+    </dl>
+    <script id="template-list-item" type="text/template">
+      <dt>
+        <!-- Names -->
+        <a title="View Google News articles" style="color:{{party}}; text-decoration:none;" href="https://news.google.com/news/search/section/q/{{name}}" target="_blank"><b>{{name}}</b></a>
+        <!-- Phones -->
+	      <a title="Click to call" href="tel:+1-{{phone}}" target="_blank">
+	      <img src="phoneLogo.png" width="15" height="15" align ="right" hspace="1" alt="phone"></a>
+        <!-- Addresses -->
+        <a title="View directions in Google Maps" href="https://www.google.com/maps/place/{{addr}}" target="_blank">
+	      <img src="pin.png" width="15" height="15" hspace="1" align ="right"></a>
+        <!-- Contacts -->
+        <a title="Reach via contact form" href="{{contact}}" target="_blank">
+        <img src="contact.png" width="15" height="15" hspace="1" align ="right"></a>
+        <!-- Wikipedia -->
+        <a title="Wikipedia" href="https://en.wikipedia.org/wiki/{{wiki}}" target="_blank">
+        <img src="wikipediaLogo.png" width="15" height="15" hspace="1" align ="right"></a>
+        <!-- FaceBook -->
+        <a title="Facebook" href= "https://www.facebook.com/{{facebook}}" target="_blank">
+        <img src="fbLogo.png" width="15" height="15" hspace="1" align ="right"></a>
+        <!-- Twitter -->
+        <a title="Twitter" href= "https://twitter.com/{{twitter}}" target="_blank">
+        <img src="twitterLogo.png" width="15" height="15" hspace="1" align ="right"></a>
+        <!-- Break -->
+        <br> <hr></hr>
+      </dt>
+    </script>
+  </body>
+</html>

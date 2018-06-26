@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+  "name": "PoliticaLink",
+  "description": "This extension allows the user to search a news article for
+  the names of relevant journalists, political actors, or organizations,
+  providing contact information for each target. The generation of an optimal
+  contact path to important political actors lowers the bar for popular
+  political engagement and encourages involvement in both local and national
+  politics.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "PoliticaLink_Logo1.png",
+    "default_popup": "popup.html",
+    "default_title": "PoliticaLink"
+  },
+  "icons": {
+    "16": "PoliticaLink_Logo1.png",
+    "48": "PoliticaLink_Logo48.png",
+    "128": "PoliticaLink_Logo128.png"
+  },
+  "permissions": [
+    "identity",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["firebase.js", "background.js"]
+   },
+   "content_scripts": [
+     {
+       "matches": ["<all_urls>"],
+       "js": ["compromise.min.js", "content.js"]
+     }
+   ]
+}
